@@ -5,12 +5,13 @@ Verification of fs to form a bug-free file fs in the presence of **system crash*
   - Crash refinement
   - SE: exhaust all the posible paths against all the disk states
     - partition the problem into multiple layers to avoid path explosion  
-    > first, all the paths in this module, whatever the input is, have been exhausted, and no corner state exists.
-    > this module can be used as a fun
+  > first, all the paths in this module, whatever the input is, have been exhausted, and no corner state exists.
+  > this module can be used as a fun  
+    - How does this method reduce paths?
     - Why "if an implementation is cr of an spec, they are **indistinguishable** to higher layers"
 - Input
   - specification of the expected behavior
-    - data structure & precondition of the data structure**(it is analogous to the consistency invariant mentioned later)**
+    - data structure & precondition of the data structure **(it is analogous to the consistency invariant mentioned later)**
     - file system operations
     - state equivalence predicate: what it means for a given fs state to be **correct**(maybe not cons-invar?)
   - implementation
@@ -53,5 +54,7 @@ Verification of fs to form a bug-free file fs in the presence of **system crash*
   > And now the question come up: what is b, the crash schedule?
   > only a pair (on, sync) is not a well definition of cs
   > and according to the definition, b in spec and impl can be different when the states and operations are equivalent? How does it come?
+  
   > It is easy to solve this question by examine how b plays a part in f
+  
   > 3.3 is important
