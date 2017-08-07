@@ -1,0 +1,17 @@
+# Assignment
+- Computer Network
+	- Figure out how socket works:
+		- wiki
+		- AUP
+		- LPI
+		- UNP
+		- TCP/IP illu
+	- Simplify LWIP socket API or find a simple implementation
+		- The codes in TCP/IP illu might be a good choice
+	- Find the common structure
+- Commuter
+	- Implement the basic structure and basic API, support counter as well
+	- debug
+	- generate test code
+	- implement all APIs
+	- figure out how to test lwip first
