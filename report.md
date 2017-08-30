@@ -59,7 +59,7 @@ The program in python to test commutativity of FS syscalls(open, link, read ...e
 
 According to POSIX interface, commuter simplified the implementation, abstract the data structure and storage, remove some unnecessary value check etc.
 
-And check the commutativity with z3 to solve conditions to find initial state not commute and generate c test code to init the state and invoke syscalls to actully test it in linux.
+And check the commutativity with z3 to solve conditions to find initial state not commute, generate c test code to init the state and invoke syscalls to actully test if the syscalls not commute in linux.
 
 ## Working on
 Trying to reimplement commuter to test socket APIs(bind, accept ...etc).
