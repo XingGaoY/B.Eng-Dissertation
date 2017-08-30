@@ -46,9 +46,9 @@ Execution order a()b() or b()a() is indistinguishable
     r0b = r1b
 ```
 And operations commute have an implementation conflict free.
-> As they can be executed in any order, no communication between them is needed
-> And eliminating it means no same cache will be visited simutaniously
-> which is conflict-free and enhance scalability
+> As they can be executed in any order, no communication between them is needed  
+> And eliminating it means no same cache will be visited simutaniously  
+> which is conflict-free and enhance scalability  
 
 ### The scalable commutativity rule
 Whenever interface operations commute, they can be implemented in a way that scales.
@@ -65,4 +65,4 @@ Trying to reimplement commuter to test socket APIs(bind, accept ...etc).
 - reimplement commuter
 - abstract socket APIs
 
-As I have never studied computer network, I'm reading textbook and implement a simple TCP/IP according to spec and code in linux and lwip.
+As I have never studied computer network, I'm reading textbook and implement a simple [TCP/IP](https://github.com/XingGaoY/tcp-ip) according to spec and code in linux and lwip.
